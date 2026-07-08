@@ -16,11 +16,7 @@
   body { margin: 0; background: var(--stone-100); font-family: var(--font-sans); color: var(--stone-700); }
   a { color: var(--sky-500); text-decoration: none; font-weight: var(--fw-semi); }
   a:hover { color: var(--sky-400); text-decoration: underline; }
-  @keyframes pulse-dot {
-    0%   { box-shadow: 0 0 0 0 rgba(43,204,137,0.55); }
-    70%  { box-shadow: 0 0 0 7px rgba(43,204,137,0); }
-    100% { box-shadow: 0 0 0 0 rgba(43,204,137,0); }
-  }
+  
   @media (max-width: 1080px) { .dsr-context { display: none !important; } }
   @media (max-width: 940px)  { .dsr-navlinks { display: none !important; } }
   @media (max-width: 980px)  {
@@ -30,6 +26,12 @@
   @media (max-width: 720px) {
     .dsr-2col, .dsr-3col, .dsr-contact { grid-template-columns: 1fr !important; }
   }
+
+@media (max-width: 640px) {
+h1 { font-size: clamp(30px, 9vw, 44px) !important; line-height: 1.15 !important; }
+h2 { font-size: clamp(24px, 6.5vw, 32px) !important; }
+section > div:first-child { padding-left: 20px !important; padding-right: 20px !important; padding-top: 44px !important; padding-bottom: 44px !important; }
+}
 </style>
 </helmet>
 
@@ -237,69 +239,104 @@
       <h2 style="font-size:38px;font-weight:var(--fw-black);letter-spacing:-0.018em;color:var(--navy-900);margin:0 0 14px;line-height:1.12;max-width:18em;">The rollout, step by step</h2>
       <p style="margin:0 0 12px;font-size:16px;line-height:1.7;color:var(--stone-700);max-width:50em;">A typical module-by-module rollout across Stonebridge's four modules, anchored on the M3 integration. Multi-property groups move in phased cohorts rather than all at once.</p>
 
-      <div style="overflow-x:auto;padding-bottom:14px;margin-top:22px;">
-        <div style="min-width:1160px;">
-          <!-- node row -->
-          <div style="display:flex;">
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:transparent;"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:22px;height:22px;border-radius:50%;background:var(--mint-700);border:3px solid var(--mint-50);box-shadow:0 0 0 3px var(--mint-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:var(--stone-300);"></div></div>
-            <div style="flex:1;display:flex;align-items:center;"><div style="flex:1;height:2px;background:var(--stone-300);"></div><div style="width:16px;height:16px;border-radius:50%;background:var(--navy-900);border:3px solid var(--mint-50);box-shadow:0 0 0 1px var(--navy-200);flex:none;"></div><div style="flex:1;height:2px;background:transparent;"></div></div>
-          </div>
-          <!-- text row -->
-          <div style="display:flex;align-items:flex-start;">
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 01</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">Kickoff &amp; Discovery</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Week 0</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">Align scope with Stonebridge ops and accounting, confirm rollout groups, send the onboarding form.</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 02</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">AP Setup &amp; M3 Integration</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Week 1</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">Connect to M3, map GL codes and chart of accounts, import vendors.</div>
-              <span style="display:inline-flex;align-items:center;gap:5px;background:var(--mint-100);color:var(--mint-800);border-radius:var(--radius-xs);padding:4px 9px;font-size:10px;font-weight:var(--fw-bold);margin-top:11px;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No M3 Integration Fee</span>
-              <div style="font-size:10px;font-weight:var(--fw-bold);color:var(--mint-700);margin-top:7px;">99% Integration Success Rate</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 03</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">AP Go-Live</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Week 2</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">Corporate and property AP training; first invoice uploaded, coded, and synced to M3 — that's go-live.</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 04</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">Purchasing Training &amp; Go-Live</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Weeks 3–4</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">Supplier credentials collected, catalogs and order guides built, Purchasing Academy training, first order placed. Purchasing goes live in week 4.</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 05</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">Inventory Rollout</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Week 7 · ~3 Weeks Post Go-Live</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">First storeroom loaded, first audit completed, then monthly counts extend across all outlets.</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 06</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">Culinary Rollout</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Chef-Led · Post Go-Live</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">POS connected, first recipe costed, then full menu uploaded property by property.</div>
-            </div>
-            <div style="flex:1;padding:18px 12px 0;text-align:center;">
-              <div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 07</div>
-              <div style="font-size:14px;font-weight:var(--fw-bold);color:var(--navy-900);margin:6px 0 3px;line-height:1.25;">30 / 60 / 90-Day Success Plan</div>
-              <div style="font-size:11px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:9px;">Days 30–90</div>
-              <div style="font-size:12px;line-height:1.55;color:var(--stone-700);">Day 30: monitor invoice coding accuracy. Day 60: validate adoption. Day 90: full adoption review and readiness to expand beyond the pilot.</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div style="margin-top:24px;">
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">1</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 01</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">Kickoff &amp; Discovery</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Week 0</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">Align scope with Stonebridge ops and accounting, confirm rollout groups, send the onboarding form.</div>
 
-      <p style="margin:20px 0 0;font-size:13px;line-height:1.6;color:var(--stone-500);max-width:60em;">Timings shown are typical for Reeco's standard onboarding, not a fixed commitment. Multi-property groups roll out in phased cohorts — around 8 to 12 properties per two-week cycle for Purchasing — so a 20+ property AP rollout runs on its own larger cohort schedule.</p>
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">2</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 02</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">AP Setup &amp; M3 Integration</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Week 1</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">Connect to M3, map GL codes and chart of accounts, import vendors.</div>
+<div style="margin-top:11px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+<span style="display:inline-flex;align-items:center;gap:5px;background:var(--mint-100);color:var(--mint-800);border-radius:var(--radius-xs);padding:4px 9px;font-size:10px;font-weight:var(--fw-bold);"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No M3 Integration Fee</span>
+<span style="font-size:10px;font-weight:var(--fw-bold);color:var(--mint-700);">99% Integration Success Rate</span>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">3</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 03</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">AP Go-Live</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Week 2</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">Corporate and property AP training; first invoice uploaded, coded, and synced to M3 &mdash; that's go-live.</div>
+
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">4</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 04</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">Purchasing Training &amp; Go-Live</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Weeks 3&ndash;4</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">Supplier credentials collected, catalogs and order guides built, Purchasing Academy training, first order placed. Purchasing goes live in week 4.</div>
+
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">5</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 05</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">Inventory Rollout</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Week 7 &middot; ~3 Weeks Post Go-Live</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">First storeroom loaded, first audit completed, then monthly counts extend across all outlets.</div>
+
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">6</div>
+<div style="width:2px;flex:1;min-height:20px;background:var(--stone-300);margin:6px 0;"></div>
+</div>
+<div style="flex:1;padding-bottom:26px;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 06</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">Culinary Rollout</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Chef-Led &middot; Post Go-Live</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">POS connected, first recipe costed, then full menu uploaded property by property.</div>
+
+</div>
+</div>
+<div style="display:flex;gap:18px;">
+<div style="display:flex;flex-direction:column;align-items:center;width:36px;flex:none;">
+<div style="width:34px;height:34px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:var(--fw-bold);flex:none;">7</div>
+
+</div>
+<div style="flex:1;padding-bottom:0;">
+<div style="font-size:11px;font-weight:var(--fw-black);letter-spacing:1px;color:var(--mint-700);">Step 07</div>
+<div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin:4px 0 2px;line-height:1.25;">30 / 60 / 90-Day Success Plan</div>
+<div style="font-size:12px;font-weight:var(--fw-bold);color:var(--stone-500);margin-bottom:6px;">Days 30&ndash;90</div>
+<div style="font-size:13px;line-height:1.6;color:var(--stone-700);max-width:46em;">Day 30: monitor invoice coding accuracy. Day 60: validate adoption. Day 90: full adoption review and readiness to expand beyond the pilot.</div>
+
+</div>
+</div>
+</div>
+
+<p style="margin:20px 0 0;font-size:13px;line-height:1.6;color:var(--stone-500);max-width:60em;">Timings shown are typical for Reeco's standard onboarding, not a fixed commitment. Multi-property groups roll out in phased cohorts — around 8 to 12 properties per two-week cycle for Purchasing — so a 20+ property AP rollout runs on its own larger cohort schedule.</p>
     </div>
   </section>
 
@@ -378,7 +415,7 @@
       <div style="font-size:12px;font-weight:var(--fw-bold);letter-spacing:2px;color:var(--mint-700);margin-bottom:10px;">§05 &nbsp;·&nbsp; Integration</div>
       <h2 style="font-size:38px;font-weight:var(--fw-black);letter-spacing:-0.018em;color:var(--navy-900);margin:0 0 36px;line-height:1.12;max-width:20em;">Connected to the systems you already run on</h2>
 
-      <div style="background:var(--stone-100);border:1px solid var(--stone-200);border-radius:var(--radius-xl);overflow:hidden;max-width:760px;">
+      <div style="background:var(--stone-100);border:1px solid var(--stone-200);border-radius:var(--radius-xl);overflow-x:auto;overflow-y:hidden;max-width:760px;">
         <table style="width:100%;border-collapse:collapse;font-size:15px;">
           <thead>
             <tr style="text-align:left;background:#fff;">
@@ -458,7 +495,7 @@
         <div style="background:var(--stone-100);border:1px solid var(--stone-200);border-radius:var(--radius-lg);padding:24px 26px;">
           <div style="font-size:16px;font-weight:var(--fw-bold);color:var(--navy-900);margin-bottom:10px;">How long does it take to go live?</div>
           <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:var(--stone-700);">AP automation alone is typically live within about two weeks of signing — connecting to M3, mapping GL codes, and importing vendors happens in week one, with corporate and property-level training completing go-live in week two.</p>
-          <p style="margin:0;font-size:14px;line-height:1.7;color:var(--stone-700);">Adding Purchasing runs on a rolling four-week cycle after AP: supplier onboarding and credential setup, then a validation call, then Purchasing training and go-live. Inventory typically layers in around three weeks after core go-live; Culinary is chef-led and follows the same pattern. Multi-property rollouts move in phased cohorts rather than all at once, so operations teams aren't managing a big-bang cutover.</p>
+          <p style="margin:0;font-size:14px;line-height:1.7;color:var(--stone-700);">Purchasing is sequenced inside that same four-week rollout, going live in week four: supplier onboarding and credential setup happen alongside AP, then a validation call, then Purchasing training and go-live. Inventory typically layers in around three weeks after core go-live; Culinary is chef-led and follows the same pattern. Multi-property rollouts move in phased cohorts rather than all at once, so operations teams aren't managing a big-bang cutover.</p>
         </div>
 
         <div style="background:var(--stone-100);border:1px solid var(--stone-200);border-radius:var(--radius-lg);padding:24px 26px;">
